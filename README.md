@@ -48,236 +48,306 @@ The basic structure of an SVG file includes the following components:
 <?xml version="1.0" encoding="UTF-8"?>
 ```
 
-This optional line declares the XML version and character encoding used in the file.
+Diese optionale Zeile deklariert die in der Datei verwendete XML-Version und Zeichenkodierung.
 
-#### SVG Root Element
+#### SVG-Wurzelelement
 
 ```xml
 <svg xmlns="http://www.w3.org/2000/svg"
-     version="1.1"
-     width="800mm" height="600mm"
-     viewBox="-400 -300 800 600">
-  <!-- SVG content goes here -->
+ Version="1.1"
+ Breite="800 mm" Höhe="600 mm"
+ viewBox="-400 -300 800 600">
+ <!-- SVG-Inhalte kommen hierhin -->
 </svg>
 ```
 
-##### Attributes:
+##### Attribute:
 
-- `xmlns`: Defines the XML namespace for SVG elements.
-- `version`: Specifies the SVG version being used.
-- `width` and `height`: Set the dimensions of the SVG canvas.
-- `viewBox`: Establishes the coordinate system and aspect ratio.
+- `xmlns`: Definiert den XML-Namespace für SVG-Elemente.
+- `Version`: Gibt die verwendete SVG-Version an.
+- `Breite` und `Höhe`: Legen Sie die Abmessungen der SVG-Leinwand fest.
+- `Ansichtsfeld`: Legt das Koordinatensystem und das Seitenverhältnis fest.
 
-#### Optional Metadata Elements
+#### Optionale Metadatenelemente
 
-Within the `<svg>` element, you can include metadata to provide additional information about the SVG content:
+Innerhalb der `<svg>` Element können Sie Metadaten einfügen, um zusätzliche Informationen zum SVG-Inhalt bereitzustellen:
 
 ```xml
-<title>Title of the SVG</title>
-<desc>Description or alternative text for the content.</desc>
+<title>Titel des SVG</title>
+<desc>Beschreibung oder Alternativtext zum Inhalt.</desc>
 ```
 
-- `<title>`: Provides a title for the SVG, which can improve accessibility.
-- `<desc>`: Offers a description of the SVG content, also aiding accessibility.
+- `<Titel>`: Bietet einen Titel für das SVG, der die Zugänglichkeit verbessern kann.
+- `<Beschreibung>`: Bietet eine Beschreibung des SVG-Inhalts und unterstützt so auch die Zugänglichkeit.
 
-#### Graphical Elements
+#### Grafische Elemente
 
-Inside the `<svg>` element, you can define various graphical elements such as:
+Im Inneren der `<svg>` Element, Sie können verschiedene grafische Elemente definieren, wie zum Beispiel:`<svg>` Element, Sie können verschiedene grafische Elemente definieren, wie zum Beispiel:
 
-- `<rect>`: Draws rectangles.
-- `<circle>`: Draws circles.
-- `<path>`: Defines complex shapes.
-- `<text>`: Adds text elements.
+- `<rechteck>`: Zeichnet Rechtecke.
+- `<Kreis>`: Zeichnet Kreise.
+- `<Pfad>`: Definiert komplexe Formen.
+- `<text>`: Für Texte Elemente hinzu.
 
-Each of these elements can have attributes to define their appearance and position.
+Jedes dieser Elemente kann Attribut haben, um sein Aussehen und seine Position zu definieren.
 
-#### Example
+#### Spiel
+
+```xml
+<?XML-Version="1.0" Kodierung="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+ Version="1.1"
+ Breite="800 mm" Höhe="600 mm"
+ viewBox="-400 -300 800 600">
+ <title>Beispiel-SVG</title>
+ <desc>Ein einfaches Beispiel einer SVG-Dateistruktur.</desc>
+ <rect x="10" y="10" Breite="100" Höhe="50" Füllung="blau" />
+</svg>
+```
+
+Dieses Beispiel stellt eine SVG-Leinwand mit einem blauen Rechteck dar, das bei (10,10) positioniert ist, mit einer Breite von 100 Einheiten und einer Höhe von 50 Einheiten.
+
+Ausführende Informationen zur SVG-Struktur und den SVG-Elementen finden Sie im [W3C SVG 2 Spezifikation](https://www.w3.org/TR/SVG2/struct.html).
+
+ XML-ErklärungInstallieren Sie vim auf Ihrem lokalen Computer und öffnen Sie eine neue Datei namens `Beispiel.svg`. Schreiben Sie den SVG-Code so, dass er eine gerade Linie, einen Kreis und einen Rechteck enthält. Wenn Sie fertig sind, können Sie die Datei mit Ihrem Browser.**
+
+Hier ist Mein **Code:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
      version="1.1"
-     width="800mm" height="600mm"
-     viewBox="-400 -300 800 600">
+     width="12cm" height="4cm"
+     viewBox="0 0 1200 400">
   <title>Sample SVG</title>
   <desc>A simple example of an SVG file structure.</desc>
-  <rect x="10" y="10" width="100" height="50" fill="blue" />
+  <rect x="1" y="1" width="1198" height="398" fill="none" storke="blue" stroke-width="2"/>
+  <line x1="500" y1="300" x2="700" y2="100" stroke-width="15"  />
+  <circle cx="600" cy="200" r="100" fill="red" stroke="none" stroke-width="10" />
 </svg>
 ```
 
-This example creates an SVG canvas with a blue rectangle positioned at (10,10) with a width of 100 units and a height of 50 units.
 
-For more detailed information on SVG structure and elements, you can refer to the [W3C SVG 2 Specification](https://www.w3.org/TR/SVG2/struct.html).
+### Aufgabe 2: Markdown
+Du hast es schon entdeckt _Markdown_ in Diesen `README.md` Datteln. 
+Es handelt sich um eine einfache und leichte Syntax, um eine Anzeigesoftware anzuweisen, Text auf einer besten Weise darzustellen.
 
-**Install vim on your local machine and open a new file, called `example.svg`. Write the SVG-code to include a straight line, a circle and a rectangle. When done, use your browser to open the file.**
+**Beantworten Sie die folgenden Fragen:**
 
-<details>
-    <summary>Your SVG Code</summary>
-    <code>
-    ......
-    </code>
-</details>
+<Details>
+    <Zusammenfassung>Wie funktioniert das Voranstellen von Hashes (<Code>#</Code>) die Anzeige Bienenflussen?</Zusammenfassung>
+    Das Voranstellen von Hashes (#) erzeugt in Markdown Überschriften. Je mehr Hashes verwendet werden, desto kleiner beziehungsweise niedriger ist die Überschrift.
+Beispiele:
+# Überschrift 1
+## Überschrift 2
+### Überschrift 3
+#### Überschrift 4
+</Details>
+<Details>
+    <Zusammenfassung>Wie markiert man kursive oder fette gedruckte Schrift?</Zusammenfassung>
+    Kursive Schrift wird mit einem Stern * oder Unterstrich _ markiert. Fettgedruckte Schrift wird mit zwei Sternen ** oder zwei Unterstrichen __ markiert.
 
-### Task 2: Markdown
-You have already discovered _markdown_ in these `README.md` files. 
-It is an easy and lightweight syntax, to instruct a display software to render text in a given way.
+Beispiele:
 
-**Answer the following questions:**
+*kursiv*
+_kursiv_
 
-<details>
-    <summary>How does prepending hashes (<code>#</code>) affect the display?</summary>
-    ......
-</details>
-<details>
-    <summary>How do you mark italic or bold font?</summary>
-    <code>
-    ......
-    </code>
-</details>
-<details>
-    <summary>Which different ways are there to generate listings and tables?</summary>
-    <code>
-    ......
-    </code>
-</details>
+**fett**
+__fett__
 
-### Task 3: LaTeX
-While markdown is great for light-weight rendering text within a limited context such as a browser or phone, when it comes to more complex and professional rendering, the `LaTeX` toolset is the standard for creating `.pdf` files. 
-`LaTeX` is usually not rendered _on the fly_, meaning while it is being displayed. 
-A special software which we call _compiler_ is used to generate a parametrized documents. 
-If you are running a local WSL, make sure to install `texlive-full` before continuing with the next steps. 
-This may take up to 30 minutes, since it's a large software package. 
-To check whether the installation was sucessful, run `pdflatex --version`.
-The output should look something like this:
-```sh
+***fett und kursiv***
+</Details>
+<Details>
+    <Zusammenfassung>Welche verschiedenen Möglichkeiten geben es, Einträge und Tabellen zu generieren?</Zusammenfassung>
+    Einträge können als ungeordnete oder geordnete Listen erstellt werden. Ungeordnete Listen nutzen -, * oder +. Geordnete Listen verwenden Zahlen. Tabellen werden mit | und --- erstellt.
+
+Beispiele:
+
+- Eintrag 1
+- Eintrag 2
+
+1. Erstes Element
+2. Zweites Element
+
+| Name | Alter |
+|------|------|
+| Anna | 21 |
+| Max | 25 |
+</Details>
+
+### Aufgabe 3: LaTeX
+Während Markdown sich hervorragend für die leichte Textwiedergabe in einem erweiterten Kontext wie einem Browser oder Telefon selbst, ist bei Komplexerer und Professioneller Wiedergabe die `LaTeX` Werkzeugsatz ist der Standard für die Gründung `. . . . .pdf` Datteln. 
+`LaTeX` Wird normalerweise nicht gerendert _im Handumdrehen_, auch würrend der Anzeige. 
+Eine spezielle Software, die wir nennen _Compiler_ wird verwendet, um parametrisierte Dokumente zu generieren. 
+Wenn Sie eine lokale WSL übernehmen, stellen Sie sicher, dass Sie installieren `texlive-voll` vor Sie mit den nächsten Schritten fortfahren. 
+Dies kann bis zu 30 Minuten dauern, da es sich um ein großes Softwarepaket handelt. 
+Um zu überprüfen, ob die Installation erfolreich war, für Sie `pdflatex --version`.
+Die Ausgabe soll ungezügelt so aussehen:
+```Scheiße
 user@machine:~$ pdflatex --version
 pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)
-kpathsea version 6.3.5
+kpathsea Version 6.3.5
 Copyright 2023 Han The Thanh (pdfTeX) et al.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the pdfTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the pdfTeX source.
-Primary author of pdfTeX: Han The Thanh (pdfTeX) et al.
-Compiled with libpng 1.6.43; using libpng 1.6.43
-Compiled with zlib 1.3; using zlib 1.3
-Compiled with xpdf version 4.04
+Es gibt KEINE Garantie. Die Weiterverbreitung dieser Software erfolgt
+unter den Bedingungen des pdfTeX-Urheberrechts und
+Die Lesser GNU General Public License.
+Weitere Informationen zu diesen Angelegenheiten finden Sie in der Datei
+Genanntes KOPIEREN und die pdfTeX-Quelle.
+Hauptautor von pdfTeX: Han The Thanh (pdfTeX) et al.
+Kompiliert mit libpng 1.6.43; unter Verwaltung von libpng 1.6.43
+Kompiliert mit zlib 1.3; mit zlib 1.3
+Kompiliert mit xpdf Version 4.04
 ```
-If you are using the lecture-server, make sure to visit the [SCP tutorial](https://github.com/STEMgraph/301394c2-6efb-4677-aaff-47091fb8145d) first. 
-Otherwise, you might have a hard time opening the generated `.pdf`-document.
+Wenn Sie den Vorlesungsserver wenden, suchen Sie sie unbedingt den [SCP-Tutorial](https://github.com/STEMgraph/301394c2-6efb-4677-aaff-47091fb8145d) Erste. 
+Andernfalls kann es sein, dass er gefallen ist, das Generierte zu öffnen `. . . .pdf`- Dokumentieren.
 
-Create a new directory on the linux machine that texlive is installed at, navigate into it and open a file with the name `main.tex`.
-Simply copy the following text into it:
+Erste Sie ein neues Verzeichnis auf dem Linux-Rechner, auf dem texlive installiert ist, navigieren Sie hinein und können Sie eine Datei mit dem Namen `main.tex`.
+Koppeln Sie einfach folgen Text hinein:
 ```tex
-\documentclass{article}             % Sets the document class to "article"
-\usepackage[utf8]{inputenc}         % Allows you to use UTF-8 input encoding
+\documentclass{article} % Setzt die Dokumentklasse auf "article"
+\usepackage[utf8]{inputenc} % Verarbeitung der Verwaltung der UTF-8-Eingangskodierung
 
-\title{Minimal LaTeX Project}       % Sets your document title
-\author{Your Name}                  % Sets your name as the author
-\date{\today}                       % Sets the date to the day you compile
+\title{Minimal LaTeX Project} % Legt Ihren Dokumenttitel fest
+\author{Ihr Name} % Legt Ihren Namen als Autor fest
+\date{\today} % Legt das Datum auf den Tag fest, an dem Sie kompilieren
 
-\begin{document}                    % Begins the document content
+\begin{document} % Beginne mit dem Dokumentinhalt
 
-\maketitle                          % Generates the title using the above information
+\maketitle % Generiert den Titel unter Werbung der eigenen allgemeinen Informationen
 
-Hello, world!                       % This is where your content goes
+Hallo Welt! % Hierhin gehen Ihre Inhalation
 
-\end{document}                      % Ends the document
+\end{document} % Beendet das Dokument
 ```
-Save and close the document. 
-Now run the following command to create a `.pdf`-file from it:
-```sh
+Speicher und Schichten Sie das Dokument. 
+Für Sie nun den folgenden Befehl aus, um eine zu ersten `. . . . . . .pdf`- Dattel-Daraus:
+```
 pdflatex -jobname=example.pdf main.tex
 ```
-After it finishes, us `ls` to inspect the directory. 
+Nachdem es fertig ist, `ls` um das Verzeichnis zu überprüfen. 
 
-**Answer the following questions:**
+**Beantworten Sie die folgenden Fragen:**
 
-<details>
-    <summary>Which files were generated by the LaTeX compiler?</summary>
-    ......
-</details>
-
-<details>
-    <summary>How do you change the name of the pdf-file?</summary>
-    ......
-</details>
-
-### Task 4: Displaying your pdf
-1) If you worked on the lecture-machine, use the `scp` command to copy your `.pdf`-file to your desktop. There you can display it with every regular `.pdf`-viewer
-2) If you worked in the WSL: run `sudo apt install xpdf -y` to install the `xpdf`-viewer. Run `xpdf <your pdf path>` to open the document.
-
-**Answer the following questions:**
-
-<details>
-    <summary>What changes in your pdf, if you change the documentclass to <code>book</code></summary>
-    ......
-</details>
-<details>
-    <summary>What changes in your pdf, if you add <code>\section{Intro}</code> after <code>\maketitle</code></summary>
-    ......
-</details>
+*Welche Daten wurden vom LaTeX-Compiler generiert?*
 
 
-### Task 5: 
-If you are running on a Windows machine, make sure to install `vim` for Windows from the [official `vim` repository](https://github.com/vim/vim-win32-installer/releases).
-Scroll down until you see the _Assets_ and use the `_64.exe` or `_x86.exe`, depending on your system. 
-If you run MacOS or Linux natively, make sure you have `vim` installed via your package-manager. 
+Der LaTeX-Compiler erzeugt mehrere Dateien. Neben der PDF-Datei werden auch Hilfsdateien erstellt, die für die Kompilierung benötigt werden. Typischerweise entstehen folgende Dateien:
+example.pdf → das fertige PDF-Dokument
+main.log → Protokolldatei mit Informationen und Fehlermeldungen
+main.aux → Hilfsdatei für Referenzen und Verzeichnisse
+Je nach Dokument können noch weitere Dateien entstehen.
 
-Open a terminal-session and create a new directory within your users home-directory called `html`.
-Use `vim` to open a new file within it called: `index.html`.
+*Wie ist der Name der PDF-Datei?*
 
-Copy the following text into it:
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Minimal HTML Example</title>
-  </head>
-  <body>
-    <p>Hello, world!</p>
-  </body>
-</html>
-```
-Depending on your system, run the following command to open the rendered file:
-Windows:
-```sh
-start index.html
-```
-MacOS
-```sh
-open index.html
-```
-Linux
-```sh
-xdg-open index.html
-```
-If you are running in WSL, make sure to install the `w3m` browser before by executing `sudo apt install w3m -y`.
+Der Name der PDF-Datei lautet:
+example.pdf
+Der Name entsteht durch den Parameter:
+-jobname=example.pdf
+im Befehl:
+pdflatex -jobname=example.pdf main.tex
 
+### Aufgabe 4: Anhang Ihres PDFs
+1) Wenn Sie an der Vorlesungsmaschine arbeiten haben, wenden Sie die `scp` Befehl zum Kopieren Ihrer `. . . . .pdf Stop working after 90 minutes and record where you stopped!- Datum auf Ihrem Desktop. Dort können Sie es mit jedem regulären anzeigen `. . . . . .pdf Hören Sie nach 90 Minuten auf zu arbeiten und zeichnen Sie auf, wo Sie aufgehört haben!-Zuschauer
+2) Wenn Sie in der WSL arbeiten haben: laufen `sudo apt install xpdf -y` um die zu installieren `xpdf`-Zuschauer. Ausführer `xpdf <Ihr PDF-Pfad>` um das Dokument zu öffnen.
 
-**Answer the following questions:**
-<details>
-  <summary>What happens if you exchange the <code>&lt;p&gt;&lt;/p&gt;</code> for <code>&lt;h1&gt;&lt;/h1&gt;</code>?</summary>
-  ...
-</details>
+**Beantworten Sie die folgenden Fragen:**
 
-<details>
-    <summary>How can you generate a listing of items?</summary>
-    <code>
-    ......
-    </code>
-</details>
-
-<details>
-    <summary>How can you create a table in this document?</summary>
-    <code>
-    ......
-    </code>
-</details>
-
+1. **War sich in Ihrem PDF geändert, wenn Sie die Dokumentklasse ändern in `book`?**
+   Wenn die Dokumentklasse von `article` zu `book` geändert wird, verändert sich das Layout des Dokuments. Das Dokument wirkt mehr wie ein Buch: Kapitel (`\chapter`) können verwendet werden, Seitenumbrüche werden anders gesetzt und die Formatierung der Überschriften verändert sich.
 
 ---
 
-**Remember:** Stop working after 90 minutes and record where you stopped!
+2. **Was hat sich in Ihrem PDF geändert, wenn Sie `\section{Einleitung}` nach `\maketitle` hinzufügen?**
+   Es wird eine neue Abschnittsüberschrift mit dem Namen „Einleitung“ erzeugt. Diese erscheint unter dem Titel des Dokuments und strukturiert den Inhalt.
+
+Beispiel:
+
+```latex id="a7u4r9"
+\maketitle
+\section{Einleitung}
+```
+
+### Aufgabe 5: 
+Wenn Sie auf einem Windows-Computer laufen, stellen Sie sicher, dass Sie installieren `vim` für Windows aus dem [Büroell `vim` Repository](https://github.com/vim/vim-win32-installer/releases).
+Scrollen Sie nach bis, bis Sie das sehen _Vermögenswerte_ und Wenden Sie sterben `_64.exe` Oder `_x86.exe`, abhängig von Ihrem System. 
+Wenn Sie MacOS oder Linux nativ ausfürhren, stellen Sie sicher, dass Sie dies getan haben `vim` Über Ihren Paketmanager installiert. 
+
+Öffnen Sie eine Terminalsitzung und erste Sie ein neues Verzeichnis im Home-Verzeichnis Ihre Nutzers mit dem Namen `HTML`.
+Wenden `vim` um darin eine neue Datei mit dem Namen zu öffnen: `index.html`.
+
+Kopieren Sie den folgenden Text hinein:
+```HTML
+<!DOCTYPE html>
+<html>
+ <Kopf>
+ <meta charset="UTF-8">
+ <title>Minimales HTML-Beispiel</title>
+ </Kopf>
+ <Körper>
+ <p>Hallo Welt!</p>
+ </Körper>
+</html>
+```
+Für Sie sind Sie nach System den folgenden Befehlen aus, um die gerenderten Termine zu kaufen:
+Windows:
+```Scheiße
+index.html starten
+```
+MacOS
+```Scheiße
+Index.html öffnen
+```
+Linux
+```Scheiße
+xdg-open index.html
+```
+Wenn Sie in WSL laufen, stellen Sie sicher, dass Sie das installieren `w3m` Browser vorher durch Ausgaben `sudo apt install w3m -y`.
+
+
+**Beantworten Sie die folgenden Fragen:**
+1. **Was passiert, wenn Sie `<p></p>` durch `<h1></h1>` ersetzen?**
+   Der Text wird nicht mehr als normaler Absatz dargestellt, sondern als große Hauptüberschrift.
+
+Beispiel:
+
+```html id="91v7a3"
+<h1>Hallo Welt!</h1>
+```
+
+---
+
+2. **Wie können Sie eine Auflistung von Artikeln erzeugen?**
+
+Mit HTML-Listen:
+
+```html id="7pr5h2"
+<ul>
+  <li>Artikel 1</li>
+  <li>Artikel 2</li>
+  <li>Artikel 3</li>
+</ul>
+```
+
+* `<ul>` erzeugt eine ungeordnete Liste
+* `<li>` erzeugt einzelne Listeneinträge
+
+---
+
+3. **Wie können Sie in diesem Dokument eine Tabelle erzeugen?**
+
+Mit den HTML-Tags `<table>`, `<tr>` und `<td>`:
+
+```html id="x1m5ka"
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Alter</td>
+  </tr>
+  <tr>
+    <td>Anna</td>
+    <td>21</td>
+  </tr>
+</table>
+```
+---
+**Denken Sie an Daran:** Hören Sie nach 90 Minuten auf zu arbeiten und zeichen Sie auf, wo Sie aufgehört haben!
