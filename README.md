@@ -1,56 +1,56 @@
 # PP3
 
-## Goal
-In this exercise, we will explore how to handle, render and display text-based information from our terminal.
-As ancient as this may seem, the foundation of effective software engineering is a familiarity with the concepts of programmatic text-processing. 
-We will generate different artifacts using four different _description-languages_. 
-After this exercise, you should be able to decide for yourselves, when to use which and have a fundamental understanding of how they are supposed to work.
+## Ziel
+In dieser Übung untersuchen wir, wie wir textbasierte Informationen von unserem Terminal aus verarbeiten, rendern und anzeigen.
+Auch die Grundlagen der Softwareentwicklung sind die Verwaltung mit den Konzepten der programmtechnischen Textverarbeitung. 
+Wir werden verschiedene Artefakte mit vier verschiedenen generieren _Beschreibung sprechen_. 
+Nach dieser Übung sollen Sie selbst entscheid können, wollen Sie welche Verben und ein grundlegender Verständnis dafür haben, wie sie funktionieren sollen.
 
-**Important:** Start a stopwatch when you begin and work uninterruptedly for 90 minutes. Once time is up, stop immediately and document the point where you had to pause.
+**Wichtig:** Beginnen Sie zu Beginnen einer Stoppuhr und arbeiten Sie 90 Minuten lang unterbrechen. Sobald die Zeit auf Grund ist, halten Sie sofort an und denken Sie den Punkt, an dem Sie innehalten mussten.
 
 ---
 
 ## Workflow
-Remember the standard workflow. 
-If in doubt, revisit [PP1](https://github.com/MaxClerkwell/PP1)
+Merken Sie sich den Standard-Workflow. 
+Im Zweifelsfall noch einmal suchen [PP1](https://github.com/MaxClerkwell/PP1)
 
-1. **Fork** the repository
-2. **Modify and Commit** your solution
-3. **Submit your link for Review**
+1. **Gabel** Das Repository
+2. **Andern und Commit** Ihre Lösung
+3. **Senden Sie Ihren Link zur Übervorbereitung**
 
-If you get stuck, use the [Github-Discussions of this Repository](https://github.com/MaxClerkwell/PP3/discussions)!
+Wenn Sie nicht mehr kommen, wenden Sie die [Github-Diskussionen zu diesem Repository](https://github.com/MaxClerkwell/PP3/discussions)!
 
-## Tasks
+## Aufgaben
 
-### Prerequisits: Linux, SSH and vim 
-> This task is not part of the measured time within this practical exercise!
+### Voraussetzungen: Linux, SSH und vim 
+> Diese Aufgabe ist nicht Teil der gemessenen Zeit innerhalb dieser praktischen Übung!
 
-By now you should already have access to one local linux machine. 
-Whether this is a Raspberry Pi, a Desktop-PC or a WSL para-virtualized system on your Windows computer doesn't make any difference.
-If you are unsure about how to log in, you can [check out this video tutorial](https://www.youtube.com/watch?v=Z0ggeNzEhzY).
-Make sure, that you are wellversed in utilizing your filesystem with `cd`, `ls`, `cat`, `mkdir` and `rm`, as well as navigating through textfiles with `vim`, by revisiting the `vimtutor` you should've finished by the end of [PP2](https://github.com/MaxClerkwell/PP2).
+Mittlere Wege sollen Sie hineits Zugriff auf einem lokalen Linux-Rechner haben. 
+Ob es sich um einen Raspberry Pi, einen Desktop-PC oder ein Paravirtualisiertes WSL-System auf Ihrem Windows-Computer handelt handelt, macht keine Unterschied.
+Wenn Sie sich nicht sicher sind, wie Sie sich anmelden sollen, können Sie [Schauen Sie sich diese Video-Tutorial an](https://www.youtube.com/watch?v=Z0ggeNzEhzY).
+Stellen Sie sicher, dass Sie mit der Nutzung Ihres Datisystems gut vertraut sind `CD`, `ls`, `Katze`, `mkdir` und `rm`, sowie das Navigieren durch Textdateien mit `vim`, indem wir die `vimtutor` Du hättest bis zum Ende fertig sein sollen [PP2](https://github.com/MaxClerkwell/PP2).
 
 ---
 
-### Task 1: SVG
-The scalable-vector-graphics format is a commonly used description language for diagrams. 
-You will probably use this file format throughout your professional career and your studies multiple times, therefore we want to explore this format here.
+### Aufgabe 1: SVG
+Das skalierbare Vektorgrafikformat ist eine hohe gewandte Beschreibung für Diagramm. 
+Sie werden diese Dateiformat wahrscheinlich würrend Ihr gemeinsamer beruflicher Laufbahn und Ihre Studienmittel wenden, daher mögen wir diese Format hier entdecken.
 
-As usual for description languages, the actual content is a regular textfile, that get's rendered on display by a sepecific rendering software. 
-In case of SVG, the software that renders the actual picture is embedded in a lot of other tools, such as browsers, or image software. 
+Wie bei Schreibsprachen über, handelt es sich bei dem eigentlichen Inhalt um eine normale Textdatei, die von einer speziellen Rendering-Software auf der Anzeige gerendert wird. 
+Im Fall von SVG ist die Software, die das eigene Bild rendert, in viele andere Tools wie Browser oder Bildsoftware einbett. 
 
-An SVG file is an XML-based text file that describes two-dimensional vector graphics. 
-The basic structure of an SVG file includes the following components:
+Eine SVG-Datei ist eine XML-basierte Textdatei, die zweidimensionalen Vektorgrafiken schreiben. 
+Die Grundstruktur einer SVG-Datei umfast folgen Komponenten:
 
-#### XML Declaration
+#### XML-Erklärung
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?>
+<?XML-Version="1.0" Kodierung="UTF-8"?>
 ```
 
-This optional line declares the XML version and character encoding used in the file.
+Diese optionale Zeit wird in der Datumsausgabe XML-Version und Zeichenkodierung angezeigt.
 
-#### SVG Root Element
+#### SVG-Wurzelelement
 
 ```xml
 <svg xmlns="http://www.w3.org/2000/svg"
